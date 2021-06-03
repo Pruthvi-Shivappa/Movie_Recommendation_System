@@ -29,19 +29,31 @@
           font-size: 3.5rem;
         }
       }
+      .button{
+	background-color: white;
+	border-style:solid;
+	border-color: black;
+	color:white;
+	padding: 30px 60px;
+	text-align:center;
+	display:inline-block;
+	font-size:16px;
+	margin: 4px 2px;
+	cursor: pointer;
+      }
     </style>
 
     <!-- Custom styles for this template -->
     <link href="{{ url_for('static', filename='album.css') }}" rel="stylesheet">
   </head>
-  <body style="background-color: goldenrod;">
+  <body style="background-color: grey;">
     <header>
 
   <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container d-flex justify-content-between">
       <a href="#" class="navbar-brand d-flex align-items-center">
 		<img src="{{ url_for('static', filename='images/logo.png') }}"/><br><br>
-		<strong style="margin-left: 10px;">MovieRec</strong>
+		<strong style="margin-left: 10px;">MovieRecommender</strong>
       </a>
     </div>
   </div>
@@ -51,11 +63,11 @@
    
   <section class="jumbotron text-center bg-image">
     <div class="container" style="color: floralwhite;">
-      <h1 class="jumbotron-heading">MovieRec</h1>
+      <h1 class="jumbotron-heading">MovieRecommender</h1>
 	  <p class="lead" style="font-weight: 800;">Welcome to the best Movie recommender System based on MovieLens dataset. </p>
-	  <p class="lead" style="font-weight: 800;">Watch anywhere. Cancel anytime</p>
+	  <p class="lead" style="font-weight: 1000;">Watch anytime. Enjoy all time </p>
       <p>
-        <a href="/login" class="btn btn-danger my-2">Start Watching</a>
+         <a href="/login" class="btn btn-primary btn-lg my-2">Start Watching</a>
       </p>
     </div>
   </section>

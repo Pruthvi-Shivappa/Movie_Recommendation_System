@@ -1521,7 +1521,7 @@ ul.arrow {
         color: #ffaa3c; }
 
 .main-content .container {
-  background: white;
+  background-color: white;;
   border-radius: 5px;
   padding: 30px; }
 
@@ -1626,6 +1626,13 @@ ul.arrow {
         height: auto;
         -webkit-transition: .3s ease;
                 transition: .3s ease; }
+    .movie-poster:hover{
+	position: relative;
+     }
+    .movie-poster:hover:after{
+	position: absolute;
+     }
+
     .movie-list .movie:hover img {
       -webkit-transform: scale(1.2);
           -ms-transform: scale(1.2);

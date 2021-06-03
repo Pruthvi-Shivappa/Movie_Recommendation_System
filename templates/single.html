@@ -7,7 +7,7 @@
 		<div id="site-content">
 			    {% include 'header1.html' %}
 			{% if session['ID'] == user_id | string %}
-			<main class="main-content">
+			<main class="main-content text-info">
 				<div class="container">
 					<div class="page">
 						<div class="breadcrumbs">
@@ -32,10 +32,9 @@
 									</ul>
 									<ul class="movie-meta">
 										<li><strong>imdb Rating:</strong> 
-											<div class="star-rating" title="{{ rate }} out of 5"><span style="width:{{ x }}%"><strong class="rating">{{ rate }}</strong> out of 5</span></div>
+											<div class="star-rating" title="{{ rate }} out of 5"><span style="width:{{ x }}%">
+										<strong class="rating">{{ rate }}</strong> out of 5</span></div>
 										</li>
-										<li><strong>Length:</strong> {{ u.Runtime }}</li>
-										<li><strong>Premiere:</strong> {{ u.Released }}</li>
 										<li><strong>Category:</strong> {{ u.Genre }}</li>
 									</ul>
 
@@ -88,7 +87,7 @@
 			<center><h1>Requested content is not available.</h1></center>
 			<center><h1>Please Sign in/ Sign up with right credentials.</h1></center>
 			{% endif %}
-			{% include 'footer.html' %}
+			<!--{% include 'footer.html' %}-->
 
 		</div>
 		<!-- Default snippet for navigation -->

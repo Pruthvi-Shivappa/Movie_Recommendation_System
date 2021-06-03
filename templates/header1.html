@@ -3,11 +3,14 @@
 					<a href="/" id="branding">
 						<img src="{{ url_for('static', filename='images/logo.png') }}" alt="" class="logo">
 						<div class="logo-copy">
-							<h1 class="site-title">MovieRec</h1>
+							<h1 class="site-title">MovieRecommender</h1>
 							<small class="site-description">The best recommender</small>
 						</div>
 					</a> <!-- #branding -->
-
+					<br><br>
+					<div>
+						<li class="menu-item"><a href="#"><h1>Hii {{session['Name'] }} </h1></a> </li>
+					</div>
 					<div class="main-navigation">
 						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
 						<ul class="menu">
@@ -17,12 +20,12 @@
 							{% if session['Name'] %}
 							<li class="menu-item {% if active=='logout' %}current-menu-item{%endif %} "><a href="{{ url_for('main.logout',user_id=user_id) }}">Logout</a></li>
 							
-							<li class="menu-item"><a href="#">Hii {{session['Name'] }}</a> </li>
 						    {% else %}
 						    <li class="menu-item {% if active=='logout' %}current-menu-item{%endif %} "><a href="{{ url_for('main.login') }}">Sign in/Sign up</a></li>
 							{% endif %}
+							
 						</ul> <!-- .menu -->
-
+	
 						
 					</div> <!-- .main-navigation -->
 

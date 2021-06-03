@@ -17,7 +17,7 @@
 
   </head>
 
-  <body class="bg-light">
+  <body class="bg-dark">
 
     <div class="container">
 
@@ -28,7 +28,7 @@
 	        <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/logo.png') }}" alt="" width="42" height="42">
 	       
 	     	
-          <h4><span class="text-muted">Sign in to MovieRec</span></h4>
+          <h4><span class="text-warning">Sign in to Movie Recommender</span></h4>
             
           </h4>
          </div>
@@ -36,99 +36,97 @@
            <form class="needs-validation"  novalidate action="" method="POST" >
           <ul class="list-group mb-3">
              <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="firstName"><span class="text-muted">User ID</span></label>
+              <div class="col-md-4 mb-2">
+                <label for="firstName"><span class="text-white">Email ID</span></label>
                 
               </div>
               <div class="col-md-6 mb-3">
-              <input type="text" class="form-control"  placeholder="Enter your ID"  value="" name="User_ID1" required>
+              <input type="text" class="form-control"  placeholder="Enter your Email ID"  value="" name="Email_ID1" required>
               
-              <div class="invalid-feedback">
-                Please enter User ID
+              <div class="invalid-feedback text-white">
+                Please enter your Email ID
               </div>
               </div>
             </div>
 
             <div class="mb-3">
-              <label for="username"><span class="text-muted">Password</span></label>
+              <label for="username"><span class="text-white">Password</span></label>
               <div class="input-group">
                 <input type="password" class="form-control" id="username" name="password" placeholder="Password" required>
-                <div class="invalid-feedback" style="width: 100%;">
+                <div class="invalid-feedback text-white" style="width: 100%;">
                  Please enter your password
                </div>
               </div>
             </div>
             
           </ul>
-           <button class="btn btn-primary btn-lg btn-block" name="btn" value="submit1">Sign In</button>
+           <button class="btn btn-success btn-lg btn-block" name="btn" value="submit1">Sign In</button>
           </form>
         </div>
 
         <div class="col-md-8 order-md-1">
           <div class="py-5 text-center">
 	        <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/1.png') }}" alt="" width="72" height="72">
-	        <h2><span class="text-muted">Join MovieRec</span></h2>
-	      </div>
-          <h4 class="mb-3">Step 1:</h4>
+	        <h2><span class="text-warning"> Join MovieRecommender! </span></h2>
+	  </div>
+  
           <br>
           <form class="needs-validation" novalidate   method="POST" action="" enctype="multipart/form-data">
           
 
             <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="firstName">User ID</label>
+              <div class="col-md-6 mb-3 text-white">
+                <label for="firstName">Email ID</label>
                 
               </div>
               <div class="col-md-6 mb-3">
-              <input type="text" class="form-control"  placeholder="Enter a number" name="User_ID" required>
+              <input type="text" class="form-control"  placeholder="Enter an Email ID" name="Email_ID" required>
               
-              <div class="invalid-feedback">
-                Please enter User ID
+              <div class="invalid-feedback text-white">
+                Please enter EmailID
               </div>
               </div>
             </div>
 
-            <div class="mb-3">
+            <div class="mb-3 text-white">
               <label for="username">Password</label>
               <div class="input-group">
                 <input type="password" class="form-control" id="username" name="password_1" placeholder="Password" required>
-                <div class="invalid-feedback" style="width: 100%;">
+                <div class="invalid-feedback text-white" style="width: 100%;">
                  Please enter your password
                </div>
               </div>
             </div>
 
-            <div class="mb-3">
+            <div class="mb-3 text-white">
               <label for="username">Confirm Password</label>
               <div class="input-group">
                 <input type="password" class="form-control" id="username" name="password_2" placeholder="Re-enter Password" required>
-                <div class="invalid-feedback" style="width: 100%;">
+                <div class="invalid-feedback text-white" style="width: 100%;">
                  Please re-enter your password
                </div>                                                                                                                                                                                                                                                
               </div>
              </div>
           <br>
-            <h4 class="mb-3">Step 2:</h4>
-          <br>
              <div class="row">
-              <div class="col-md-6 mb-3">
+              <div class="col-md-6 mb-3 text-white">
                 <label for="firstName">Name</label>
                 
               </div>
               <div class="col-md-6 mb-3">
-              <input type="text" class="form-control"  placeholder="Your full name"  name="username" required>
+              <input type="text" class="form-control "  placeholder="Your full name"  name="username" required>
               
-              <div class="invalid-feedback">
+              <div class="invalid-feedback text-white">
                 Please enter your name.
               </div>
               </div>
             </div>
 
-           <ul class="list-group mb-3">
+           <ul class="list-group  mb-3">
              <li class="list-group-item d-flex justify-content-between lh-condensed">
-              <div class="col-md-5 mb-3">
+              <div class="col-md-5 mb-3 ">
                 <label for="country">Select your Genre 1</label>
-                <select class="custom-select d-block w-100" name="value1"> 
+                <select class="custom-select d-block bg-dark text-white w-100" name="value1"> 
                   <option value="All">All</option> 
                   <option value="action">Action</option> 
                   <option value="adventure">Adventure</option> 
@@ -159,7 +157,7 @@
             <li class="list-group-item d-flex justify-content-between lh-condensed">
               <div class="col-md-5 mb-3">
                 <label for="country">Select your Genre 2</label>
-                <select class="custom-select d-block w-100" name="value2"> 
+                <select class="custom-select d-block bg-dark text-white w-100" name="value2"> 
                   <option value="All">All</option> 
                   <option value="action">Action</option> 
                   <option value="adventure">Adventure</option> 
@@ -181,7 +179,7 @@
                   <option value="western">Western</option>
                   
                  
-              </select> 
+               </select> 
                 <div class="invalid-feedback">
                   Please select a valid genre
                 </div>
@@ -193,28 +191,27 @@
             
             <hr class="mb-4">
          
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="save-info" name="check">
+            <!--<div class="custom-control custom-checkbox">
+             <input type="checkbox" class="custom-control-input" id="save-info" name="check">
               <div class="invalid-feedback">
                 Click on this box.
+              	</div>
+              	 <!--<label class="custom-control-label text-info" for="save-info">By clicking Create Account, you agree to our Terms and confirm that you have read our Data Policy, including Movie 		      		Recommender Cookie Use Policy.</label>
+              	</div>-->
+                <br>
+                <button class="btn btn-success btn-lg btn-block" name="btn" value="submit">Create an account</button>
+          	</form>
               </div>
-              <label class="custom-control-label" for="save-info">By clicking Create Account, you agree to our Terms and confirm that you have read our Data Policy, including MovieRec Cookie Use Policy.</label>
             </div>
-            <br>
-            <button class="btn btn-primary btn-lg btn-block" name="btn" value="submit">Create an account</button>
-          </form>
-        </div>
-      </div>
 
-      <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">&copy; 2018-2019 MovieRec</p>
+    <!--  <footer class="my-5 pt-5 text-info text-center text-small">
         <ul class="list-inline">
           <li class="list-inline-item"><a href="#">Privacy</a></li>
           <li class="list-inline-item"><a href="#">Terms</a></li>
           <li class="list-inline-item"><a href="#">Support</a></li>
         </ul>
-      </footer>
-    </div>
+      </footer>-->
+      </div>
 
    
     <script>
